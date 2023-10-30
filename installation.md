@@ -1,4 +1,13 @@
-# ansible Installation
+# Ansible Installation
+## For AMI: Amazon Linux 2
+```sh
+sudo amazon-linux-extras install epel -y
+sudo amazon-linux-extras disable ansible2
+sudo yum --enablerepo epel install ansible -y
+ansible --version
+cd /etc;chmod -R 777 ansible/
+````
+## For AMI: Amazon Linux 2023
 ### system update
 ```sh
 sudo dnf update
