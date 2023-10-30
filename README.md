@@ -6,5 +6,6 @@ It simplifies tasks such as repetitive tasks, provisioning, configuration manage
 
 #### How to execute the ansible playbook
 ```sh
-ansible-playbook firstplaybook.yaml -i inventory.ini
+ansible-playbook firstplaybook.yaml # Default Inventory file
+ansible-playbook firstplaybook.yaml -i inventory.ini # Customised Inventory file
 ````
