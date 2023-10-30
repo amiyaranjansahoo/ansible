@@ -25,3 +25,12 @@ pip --version
 pip install ansible
 ansible --version
 ```
+
+### Install sshpass, whereever required
+```sh
+ wget http://sourceforge.net/projects/sshpass/files/latest/download -O sshpass.tar.gz
+ tar -xvf sshpass.tar.gz
+ cd sshpass-1.06
+ ./configure
+sudo make install
+````
