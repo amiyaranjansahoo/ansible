@@ -5,7 +5,8 @@ Play defines a set of tasks to be executed on one or more remote hosts.
 The task is a single action to be performed on a host or group of hosts
 Playbooks are written in YAML format and provide a way to organize and execute complex automation tasks.
 Some examples of a task are 
-	executing a command 
+	executing a command
+        copy a file
 	Run a script
 	Installing a package on the host 
 	performing a shutdown or a restart operation etc etc
