@@ -2,7 +2,7 @@
 - hosts: apache
   become: True
   tasks:
-    - name: install apache
+    - name: Install Apache
       yum:
         name: httpd
         state: present
@@ -12,11 +12,11 @@
 - hosts: apache
   become: True
   tasks:
-    - name: install apache
+    - name: Install Apache
       yum:
         name: httpd
         state: present
-    - name: start and enable apache server
+    - name: Start and Enable Apache
       service:
         name: httpd
         state: started
@@ -27,15 +27,15 @@
 - hosts: apache
   become: True
   tasks:
-    - name: install apache
+    - name: Install Apache
       yum:
         name: httpd
         state: present
-    - name: copy index file on to apceh server
+    - name: Copy index file on to Apache server
       copy:
         src: index.html
         dest: /var/www/html/
-    - name: start and enable apache server
+    - name: Start and Enable Apache server
       service:
         name: httpd
         state: started
