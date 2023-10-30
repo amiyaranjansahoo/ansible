@@ -3,14 +3,15 @@
 
 #### What is yaml
 ```sh
-1. YAML stands for yet another markup language
-2. YAML files use a .yml or .yaml extension, and follow specific syntax rules.
-3. 3 dashes (---) are used to signal the start of a document, while each document ends
+1. YAML (YAML Ain't Markup Language) is a human-readable data serialization format
+2. YAML stands for yet another markup language
+3. YAML files use a .yml or .yaml extension, and follow specific syntax rules.
+4. 3 dashes (---) are used to signal the start of a document, while each document ends
    with three dots (...).
-4. YAML documents consist of key-value pairs.
-5. The key and value separated by a colon and a space.
-6. The values can be strings, numbers, list, or even nested key-value pairs.
-7. Comments in YAML start with the # symbol.
+5. YAML documents consist of key-value pairs.
+6. The key and value separated by a colon and a space.
+7. The values can be strings, numbers, list, or even nested key-value pairs.
+8. Comments in YAML start with the # symbol.
 ````
 #### Lists
 ```sh
