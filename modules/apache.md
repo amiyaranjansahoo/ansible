@@ -1,5 +1,5 @@
 ```sh
-- hosts: apache
+- hosts: server1
   become: True
   tasks:
     - name: Install Apache
@@ -9,7 +9,7 @@
 ````
 
 ```sh
-- hosts: apache
+- hosts: server1
   become: True
   tasks:
     - name: Install Apache
@@ -24,7 +24,7 @@
 ````
 
 ```sh
-- hosts: apache
+- hosts: server1
   become: True
   tasks:
     - name: Install Apache
