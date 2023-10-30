@@ -1,5 +1,15 @@
-It defines a set of tasks to be executed on one or more remote hosts. 
+#### What is playbook
+```sh
+A playbook is a single YAML file containing a set of plays
+Play defines a set of tasks to be executed on one or more remote hosts.
+The task is a single action to be performed on a host or group of hosts
 Playbooks are written in YAML format and provide a way to organize and execute complex automation tasks.
+Some examples of a task are 
+	executing a command 
+	Run a script
+	Installing a package on the host 
+	performing a shutdown or a restart operation etc etc
+````
 
 #### Example of playbok
 ```sh
