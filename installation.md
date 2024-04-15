@@ -1,6 +1,6 @@
 # Ansible Installation
 ## For AMI: Amazon Linux 2
-amazon-linux-extras install ansible2 -y
+sudo amazon-linux-extras install ansible2 -y
 ## For AMI: Amazon Linux 2 (Alternative)
 ```sh
 sudo amazon-linux-extras install epel -y
