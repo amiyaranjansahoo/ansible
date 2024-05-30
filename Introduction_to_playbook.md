@@ -15,29 +15,33 @@ Some examples of a task are
 #### Example of playbok
 ```sh
 ---
-- name: Configure Web Servers
-  hosts: web_servers
+- name: First Play - Manage Web Servers
+  hosts: webservers
+  become: yes
   tasks:
-    - name: Ensure Apache is installed
-      package:
-        name: apache2
+    - name: Install Apache web server
+      yum:
+        name: httpd
         state: present
 
-    - name: Start Apache Service
+    - name: Start Apache web server
       service:
-        name: apache2
+        name: httpd
         state: started
-		
-- name: Configure Database Servers
-  hosts: db_servers
+        enabled: yes
+
+- name: Second Play - Manage Database Servers
+  hosts: dbservers
+  become: yes
   tasks:
-    - name: Ensure MySQL is installed
-      package:
+    - name: Install MySQL server
+      yum:
         name: mysql-server
         state: present
 
-    - name: Start MySQL Service
+    - name: Start MySQL service
       service:
-        name: mysql
+        name: mysqld
         state: started
+        enabled: yes
 ````
