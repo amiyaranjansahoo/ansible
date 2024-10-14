@@ -20,3 +20,7 @@
 3. Verify the httpd is Running
 4. Un-install the httpd
 ```
+### Task 4 - uptime status
+```sh
+1. Check the uptime of all the target host
+```
